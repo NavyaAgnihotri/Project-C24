@@ -6,7 +6,7 @@ class paper{
             friction:0.5,
             density:1.2
         }
-        this.body=Bodies.circle(x,y,radius,options);
+        this.body=Bodies.ellipse(x,y,radius,options);
         this.radius=radius;
         World.add(world , this.body);
      }
@@ -19,7 +19,7 @@ class paper{
          translate(position.x , position.y);
          rotate(angle);
          fill("white");
-         circle(0,0,this.radius);
+         ellipse(0,0,this.radius);
          pop();
 
      }
